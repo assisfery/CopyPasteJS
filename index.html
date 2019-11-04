@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CopyPasteJS</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<div class="container py-4">
+		
+		<h3>CopyPasteJS</h3>
+		<p>This a small JS library to execute clipboard functions in a fast and easy way.</p>
+		<br><br>
+
+		<h5>Copy Text</h5>
+		<br>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" value="Text to copy" id="txtCopy">
+			<div class="input-group-append">
+				<button class="btn btn-success" data-copy-origin="#txtCopy">Copy</button>
+			</div>
+		</div>
+		<br><br>
+
+		<h5>Paste Text</h5>
+		<br>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" id="txtPaste">
+			<div class="input-group-append">
+				<button class="btn btn-success" data-paste-target="#txtPaste">Paste</button>
+			</div>
+		</div>
+		<br><br>
+
+		<h5>Cut Text</h5>
+		<br>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" value="Text to cut" id="txtCut">
+			<div class="input-group-append">
+				<button class="btn btn-success" data-cut-origin="#txtCut">Cut</button>
+			</div>
+		</div>
+		<br><br>
+
+	</div>
+
+	<script src="src/CopyPasteJS.js"></script>
+</body>
+</html>
