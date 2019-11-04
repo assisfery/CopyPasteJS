@@ -1,5 +1,8 @@
 var CopyPasteJS = {};
 
+CopyPasteJS.init = function()
+{
+
 // COPY FROM ORIGIN
 CopyPasteJS.copys = document.querySelectorAll("[data-copy-origin]");
 
@@ -64,3 +67,8 @@ for(var i = 0; i < CopyPasteJS.cuts.length; i++)
 
 	});
 }
+
+}
+
+
+CopyPasteJS.init();
