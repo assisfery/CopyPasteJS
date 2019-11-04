@@ -18,7 +18,9 @@ for(var i = 0; i < CopyPasteJS.copys.length; i++)
 		copyElement.select();
 		document.execCommand("copy");
 
-
+		var copyCallback = this.getAttribute("data-copy-callback");
+		if(copyCallback)
+			eval(copyCallback);
 		//alert(copyOrigin);
 
 	});
@@ -30,8 +32,10 @@ for(var i = 0; i < CopyPasteJS.copyTexts.length; i++)
 {
 	CopyPasteJS.copyTexts[i].addEventListener("click", function(){
 
-		var copyTxt = this.getAttribute("data-copy-text");		
-		CopyPasteJS.copyText(copyTxt);
+		var copyTxt = this.getAttribute("data-copy-text");
+		var copyCallback = this.getAttribute("data-copy-callback");
+
+		CopyPasteJS.copyText(copyTxt, copyCallback);
 
 	});
 }
@@ -54,6 +58,10 @@ for(var i = 0; i < CopyPasteJS.pastes.length; i++)
 		{
 			pasteElement.value = CopyPasteJS.data;
 		}
+
+		var pasteCallback = this.getAttribute("data-paste-callback");
+		if(pasteCallback)
+			eval(pasteCallback);
 
 		//alert(pasteTarget);
 
@@ -83,7 +91,7 @@ for(var i = 0; i < CopyPasteJS.cuts.length; i++)
 }
 
 // COPY TEXT
-CopyPasteJS.copyText = function(txt)
+CopyPasteJS.copyText = function(txt, callback)
 {
 	CopyPasteJS.data = txt;
 
@@ -93,6 +101,14 @@ CopyPasteJS.copyText = function(txt)
 	element.select();
 	document.execCommand('copy');
 	document.body.removeChild(element);
+
+	if(callback)
+	{
+		if(typeof callback == "string")
+			eval(callback);
+		else
+			callback();
+	}
 }
 
 CopyPasteJS.init();

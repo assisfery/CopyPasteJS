@@ -39,7 +39,7 @@
 		<br><br>
 
 		<h5 class="text-success">Copy Text - From Nowhere</h5>
-		<p>To copy text to clipboard <b>data-copy-text="#element"</b> attribute to the button.</p>
+		<p>To copy text to clipboard <b>data-copy-text="text"</b> attribute to the button.</p>
 
 		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-text="Some text"&gt;Copy&lt;/button&gt;</pre>
 
@@ -48,8 +48,11 @@
 		
 
 		<h5 class="text-success">Paste Text</h5>
+
 		<p>To paste data to a input element just add <b>data-paste-target="#element"</b> attribute to the button.</p>
+
 		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-paste-target="#txtPaste"&gt;Paste&lt;/button&gt;</pre>
+		
 		<div class="input-group mb-3">
 			<input type="text" class="form-control" id="txtPaste">
 			<div class="input-group-append">
@@ -59,8 +62,11 @@
 		<br><br>
 
 		<h5 class="text-success">Cut Text</h5>
+
 		<p>To cut data from a input element just add <b>data-cut-origin="#element"</b> attribute to the button.</p>
+
 		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-cut-origin="#txtCut"&gt;Cut&lt;/button&gt;</pre>
+
 		<div class="input-group mb-3">
 			<input type="text" class="form-control" value="Text to cut" id="txtCut">
 			<div class="input-group-append">
@@ -70,15 +76,42 @@
 		<br><br>
 
 		<h5 class="text-success">Copy and Paste Text</h5>
+
 		<p>To copy and paste data from a input element to another just add <b>data-copy-origin="#element"</b> and <b>data-paste-target="#element"</b> attributes to the button.</p>
+
 		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#txtCopy2" data-paste-target="#txtPaste2"&gt;Copy and Paste&lt;/button&gt;</pre>
+
 		<label>Copy Text</label>
 		<input type="text" class="form-control" value="New text to copy" id="txtCopy2">
 		<br>
+
 		<label>Paste Text</label>
 		<input type="text" class="form-control" id="txtPaste2">
 		<br>
 		<button class="btn btn-success" data-copy-origin="#txtCopy2" data-paste-target="#txtPaste2">Copy and Paste</button>
+		<br><br><br>
+
+		<h5 class="text-success">Copy Callback function</h5>
+		<p>After data is been copied if you want to execute a function just add <b>data-copy-callback="jscode()"</b> attribute to the button.</p>
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#txtCopy3" data-copy-callback="alert('copied')"&gt;Copy and Callback&lt;/button&gt;</pre>
+
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" value="Copy this text and execute callback" id="txtCopy3">
+			<div class="input-group-append">
+				<button class="btn btn-success" data-copy-origin="#txtCopy3" data-copy-callback="alert('copied')">Copy and Callback</button>
+			</div>
+		</div>
+
+		<br><br>
+		<h5 class="text-success">Paste Callback function</h5>
+		<p>After data is been pasted if you want to execute a function just add <b>data-paste-callback="jscode()"</b> attribute to the button.</p>
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-paste-target="#txtPaste3" data-paste-callback="alert('pasted')"&gt;Paste and Callback&lt;/button&gt;</pre>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" id="txtPaste3">
+			<div class="input-group-append">
+				<button class="btn btn-success" data-paste-target="#txtPaste3" data-paste-callback="alert('pasted')">Paste and Callback</button>
+			</div>
+		</div>
 
 	</div>
 
