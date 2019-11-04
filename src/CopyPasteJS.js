@@ -24,6 +24,18 @@ for(var i = 0; i < CopyPasteJS.copys.length; i++)
 	});
 }
 
+CopyPasteJS.copyTexts = document.querySelectorAll("[data-copy-text]");
+
+for(var i = 0; i < CopyPasteJS.copyTexts.length; i++)
+{
+	CopyPasteJS.copyTexts[i].addEventListener("click", function(){
+
+		var copyTxt = this.getAttribute("data-copy-text");		
+		CopyPasteJS.copyText(copyTxt);
+
+	});
+}
+
 // PASTE TO TARGET
 CopyPasteJS.pastes = document.querySelectorAll("[data-paste-target]");
 
@@ -70,5 +82,17 @@ for(var i = 0; i < CopyPasteJS.cuts.length; i++)
 
 }
 
+// COPY TEXT
+CopyPasteJS.copyText = function(txt)
+{
+	CopyPasteJS.data = txt;
+
+	var element = document.createElement('input');
+	element.value = txt;
+	document.body.appendChild(element);
+	element.select();
+	document.execCommand('copy');
+	document.body.removeChild(element);
+}
 
 CopyPasteJS.init();

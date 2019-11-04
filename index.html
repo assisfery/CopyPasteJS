@@ -22,12 +22,12 @@
 
 		<h5 class="text-success">Get Start</h5>
 		<p>Just import the <b>src/CopyPasteJS.js</b> file in end of your document.</p>
-		<pre id="jsIncludeCode" class="alert alert-secondary">&lt;script src="src/CopyPasteJS.js"&gt;&lt;/script&gt;</pre>
+		<pre class="alert alert-secondary">&lt;script src="src/CopyPasteJS.js"&gt;&lt;/script&gt;</pre>
 		<br><br>
 
-		<h5 class="text-success">Copy Text</h5>
+		<h5 class="text-success">Copy Text - From Input Element</h5>
 		<p>To copy data from a input element just add <b>data-copy-origin="#element"</b> attribute to the button.</p>
-		<pre id="jsIncludeCode" class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#txtCopy"&gt;Copy&lt;/button&gt;</pre>
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#txtCopy"&gt;Copy&lt;/button&gt;</pre>
 
 		<div class="input-group mb-3">
 			<input type="text" class="form-control" value="Text to copy" id="txtCopy">
@@ -35,12 +35,21 @@
 				<button class="btn btn-success" data-copy-origin="#txtCopy">Copy</button>
 			</div>
 		</div>
+
 		<br><br>
+
+		<h5 class="text-success">Copy Text - From Nowhere</h5>
+		<p>To copy text to clipboard <b>data-copy-text="#element"</b> attribute to the button.</p>
+
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-text="Some text"&gt;Copy&lt;/button&gt;</pre>
+
+		<button class="btn btn-success" data-copy-text="Just a text to be copied">Copy</button>
+		<br><br><br>
 		
 
 		<h5 class="text-success">Paste Text</h5>
 		<p>To paste data to a input element just add <b>data-paste-target="#element"</b> attribute to the button.</p>
-		<pre id="jsIncludeCode" class="alert alert-secondary">&lt;button class="btn btn-success" data-paste-target="#txtPaste"&gt;Paste&lt;/button&gt;</pre>
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-paste-target="#txtPaste"&gt;Paste&lt;/button&gt;</pre>
 		<div class="input-group mb-3">
 			<input type="text" class="form-control" id="txtPaste">
 			<div class="input-group-append">
@@ -51,7 +60,7 @@
 
 		<h5 class="text-success">Cut Text</h5>
 		<p>To cut data from a input element just add <b>data-cut-origin="#element"</b> attribute to the button.</p>
-		<pre id="jsIncludeCode" class="alert alert-secondary">&lt;button class="btn btn-success" data-cut-origin="#txtCut"&gt;Cut&lt;/button&gt;</pre>
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-cut-origin="#txtCut"&gt;Cut&lt;/button&gt;</pre>
 		<div class="input-group mb-3">
 			<input type="text" class="form-control" value="Text to cut" id="txtCut">
 			<div class="input-group-append">
@@ -62,7 +71,7 @@
 
 		<h5 class="text-success">Copy and Paste Text</h5>
 		<p>To copy and paste data from a input element to another just add <b>data-copy-origin="#element"</b> and <b>data-paste-target="#element"</b> attributes to the button.</p>
-		<pre id="jsIncludeCode" class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#txtCopy2" data-paste-target="#txtPaste2"&gt;Copy and Paste&lt;/button&gt;</pre>
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#txtCopy2" data-paste-target="#txtPaste2"&gt;Copy and Paste&lt;/button&gt;</pre>
 		<label>Copy Text</label>
 		<input type="text" class="form-control" value="New text to copy" id="txtCopy2">
 		<br>
