@@ -111,4 +111,6 @@ CopyPasteJS.copyText = function(txt, callback)
 	}
 }
 
-CopyPasteJS.init();
+window.addEventListener('load', function() {
+    CopyPasteJS.init();
+});
