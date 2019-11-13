@@ -1,6 +1,9 @@
+
 ##  CopyPasteJS
 
 This a small JS library to execute clipboard functions in a fast and easy way.
+See the demo here: [https://assisfery.github.io/CopyPasteJS/index.html](https://assisfery.github.io/CopyPasteJS/index.html)
+
 
 ### Get Start
 Just import the  **src/CopyPasteJS.js**  file in end of your document.
