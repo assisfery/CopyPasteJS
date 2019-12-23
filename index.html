@@ -131,6 +131,44 @@
 			</div>
 		</div>
 
+		<br><br>
+		<h5 class="text-success">JavaScript Utils</h5>
+		<p>You can do all those actions in JavaScript code.</p>
+
+		<br>
+		<h5 class="text-success">Copy Text in JavaScript</h5>
+		<pre class="alert alert-secondary">CopyPasteJS.copyText("Text copied in JS");</pre>
+
+		<button class="btn btn-success" onclick="copyText()">Copy Text</button>
+		<script>
+			
+			function copyText()
+			{
+				CopyPasteJS.copyText("Text copied in JS");
+			}
+
+		</script>
+
+		<br><br>
+		<h5 class="text-success">Copy Text in JavaScript</h5>
+		<pre class="alert alert-secondary">CopyPasteJS.copyText("Text copied in JS and Callback triggered", function(){
+	alert("Yes its done");
+});</pre>
+
+		<button class="btn btn-success" onclick="copyTextAndCallback()">Copy Text and Callback</button>
+
+		<script>
+			
+			function copyTextAndCallback()
+			{
+				CopyPasteJS.copyText("Text copied in JS and Callback triggered", function(){
+					alert("Yes its done");
+				});
+			}
+
+		</script>
+
+
 		<br>
 		<div class="text-right text-muted">
 			<span>Made with ♥ by <a href="https://github.com/assisfery/" target="_blank">Assis Ferreira</a></span>
@@ -138,6 +176,6 @@
 
 	</div>
 
-	<script src="src/CopyPasteJS.min.js"></script>
+	<script src="src/CopyPasteJS.js"></script>
 </body>
 </html>
