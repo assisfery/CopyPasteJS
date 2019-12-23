@@ -168,6 +168,23 @@
 
 		</script>
 
+		<br><br>
+		<h5 class="text-success">Copy Value From Element in JavaScript</h5>		
+		<pre class="alert alert-secondary">CopyPasteJS.copyFrom("#txtCopy4");</pre>
+
+		<input type="text" class="form-control" value="Copy something here" id="txtCopy4">
+		<br>
+		<button class="btn btn-success" onclick="copyFromElement()">Copy Text From Element</button>
+		
+		<script>
+			
+			function copyFromElement()
+			{
+				CopyPasteJS.copyFrom("#txtCopy4");
+			}
+
+		</script>
+
 
 		<br>
 		<div class="text-right text-muted">

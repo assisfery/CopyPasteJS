@@ -111,6 +111,23 @@ CopyPasteJS.copyText = function(txt, callback)
 	}
 }
 
+// COPY FROM ELEMENT
+CopyPasteJS.copyFrom = function(element, callback)
+{
+	var element = document.querySelector(element);
+	element.select();
+	CopyPasteJS.data = element.value;
+	document.execCommand('copy');
+
+	if(callback)
+	{
+		if(typeof callback == "string")
+			eval(callback);
+		else
+			callback();
+	}
+}
+
 window.addEventListener('load', function() {
     CopyPasteJS.init();
 });
