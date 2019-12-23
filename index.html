@@ -150,7 +150,7 @@
 		</script>
 
 		<br><br>
-		<h5 class="text-success">Copy Text in JavaScript</h5>
+		<h5 class="text-success">Copy Text in JavaScript and Callback Function</h5>
 		<pre class="alert alert-secondary">CopyPasteJS.copyText("Text copied in JS and Callback triggered", function(){
 	alert("Yes its done");
 });</pre>
@@ -170,7 +170,12 @@
 
 		<br><br>
 		<h5 class="text-success">Copy Value From Element in JavaScript</h5>		
-		<pre class="alert alert-secondary">CopyPasteJS.copyFrom("#txtCopy4");</pre>
+		<pre class="alert alert-secondary">CopyPasteJS.copyFrom("#txtCopy4");
+
+// OR USE CALLBACK
+CopyPasteJS.copyFrom("#txtCopy4", function(){
+	alert(123);
+});</pre>
 
 		<input type="text" class="form-control" value="Copy something here" id="txtCopy4">
 		<br>
@@ -185,6 +190,29 @@
 
 		</script>
 
+		<br><br>
+		<h5 class="text-success">Paste To Element in JavaScript</h5>
+		<pre class="alert alert-secondary">CopyPasteJS.pasteTo("#txtPaste4");
+
+// OR CALL A FUNCTION
+CopyPasteJS.pasteTo("#txtPaste4", function(){
+	alert("I fell amazing");
+});
+</pre>
+
+		<input type="text" class="form-control" id="txtPaste4">
+		<br>
+		<button class="btn btn-success" onclick="pasteToElement()">Paste To Element</button>
+		
+		<script>
+			
+			function pasteToElement()
+			{
+				CopyPasteJS.pasteTo("#txtPaste4");
+			}
+
+		</script>	
+		
 
 		<br>
 		<div class="text-right text-muted">
@@ -193,6 +221,6 @@
 
 	</div>
 
-	<script src="src/CopyPasteJS.js"></script>
+	<script src="src/CopyPasteJS.min.js"></script>
 </body>
 </html>

@@ -64,3 +64,38 @@ After data is been pasted if you want to execute a function just add  **data-pas
 ```html
 <button class="btn btn-success" data-paste-target="#txtPaste3" data-paste-callback="alert('pasted')">Paste and Callback</button>
 ```
+
+### JavaScript Utils
+You can do all those actions in JavaScript code.
+
+#### Copy Text in JavaScript
+```js
+CopyPasteJS.copyText("Text copied in JS");
+```
+
+#### Copy Text in JavaScript and Callback Function
+```js
+CopyPasteJS.copyText("Text copied in JS and Callback triggered", function(){
+	alert("Yes its done");
+});
+```
+
+#### Copy Value From Element in JavaScript
+```js
+CopyPasteJS.copyFrom("#txtCopy4");
+
+// OR USE CALLBACK
+CopyPasteJS.copyFrom("#txtCopy4", function(){
+	alert(123);
+});
+```
+
+#### Paste To Element in JavaScript
+```js
+CopyPasteJS.pasteTo("#txtPaste4");
+
+// OR CALL A FUNCTION
+CopyPasteJS.pasteTo("#txtPaste4", function(){
+	alert("I fell amazing");
+});
+```
