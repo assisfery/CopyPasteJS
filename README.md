@@ -5,7 +5,7 @@ This a small JS library to execute clipboard functions in a fast and easy way.
 
 See the demo here: [https://assisfery.github.io/CopyPasteJS/index.html](https://assisfery.github.io/CopyPasteJS/index.html)
 
-CND repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
+CDN repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
 
 [![](https://data.jsdelivr.com/v1/package/gh/assisfery/CopyPasteJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS)
 
@@ -16,9 +16,9 @@ Just import the  **src/CopyPasteJS.js**  file in your document.
 <script src="src/CopyPasteJS.js"></script>
 ```
 
-Those file are hosted in CDN JSDelivr.
+This file is hosted in CDN JSDelivr.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@master/src/CopyPasteJS.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@1.0/src/CopyPasteJS.min.js"></script>
 ```
 
 ### Copy Text - From Input Element
