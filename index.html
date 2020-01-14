@@ -55,14 +55,13 @@
 		</div>
 
 		<br>
-
 		<h5 class="text-success">Copy Text - From TextArea Element</h5>
 
 		<textarea id="txtArea" rows="3" class="form-control">Yes we can make difference.</textarea>
 		<br>
 		<button class="btn btn-success" data-copy-origin="#txtArea">Copy</button>
 
-		<br><br>
+		<br><br><br>
 
 		<h5 class="text-success">Copy Text - From Nowhere</h5>
 		<p>To copy text to clipboard <b>data-copy-text="text"</b> attribute to the button.</p>
@@ -70,6 +69,17 @@
 		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-text="Some text"&gt;Copy&lt;/button&gt;</pre>
 
 		<button class="btn btn-success" data-copy-text="Just a text to be copied">Copy</button>
+
+		<br><br><br>
+		<h5 class="text-success">Copy Text - From Others Element</h5>
+
+		<p>To copy text to clipboard from a html element just include <b>data-copy-origin="#element"</b> attribute to the button.</p>
+		
+		<pre class="alert alert-secondary">&lt;button class="btn btn-success" data-copy-origin="#element"&gt;Copy&lt;/button&gt;</pre>
+
+		<p id="txtTitle">Text copied from a <b>p</b> element.</p>
+		<button class="btn btn-success" data-copy-origin="#txtTitle">Copy</button>
+
 		<br><br><br>
 		
 

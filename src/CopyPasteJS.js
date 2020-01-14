@@ -13,9 +13,18 @@ for(var i = 0; i < CopyPasteJS.copys.length; i++)
 		var copyOrigin = this.getAttribute("data-copy-origin");
 		var copyElement= document.querySelector(copyOrigin);
 
-		CopyPasteJS.data = copyElement.value;
 
-		copyElement.select();
+		if(copyElement.tagName && (copyElement.tagName.toLowerCase() == "input" || copyElement.tagName.toLowerCase() == "textarea"))
+		{
+			CopyPasteJS.data = copyElement.value;
+			copyElement.select();
+		}
+		else
+		{
+			CopyPasteJS.data = copyElement.innerText;
+			CopyPasteJS.selectText(copyOrigin);
+		}		
+
 		document.execCommand("copy");
 
 		var copyCallback = this.getAttribute("data-copy-callback");
@@ -115,8 +124,18 @@ CopyPasteJS.copyText = function(txt, callback)
 CopyPasteJS.copyFrom = function(elem, callback)
 {
 	var element = document.querySelector(elem);
-	element.select();
-	CopyPasteJS.data = element.value;
+
+	if(element.tagName && (element.tagName.toLowerCase() == "input" || element.tagName.toLowerCase() == "textarea"))
+	{
+		element.select();
+		CopyPasteJS.data = element.value;
+	}
+	else
+	{
+		CopyPasteJS.data = element.innerText;
+		CopyPasteJS.selectText(elem);
+	}
+	
 	document.execCommand('copy');
 
 	if(callback)
@@ -148,6 +167,31 @@ CopyPasteJS.pasteTo = function(elem, callback)
 		else
 			callback();
 	}
+}
+
+// SELECT TEXT
+
+CopyPasteJS.selectText = function(element)
+{
+	var text = document.querySelector(element),
+		range, selection;
+
+	if (document.body.createTextRange)
+	{
+		range = document.body.createTextRange();
+		range.moveToElementText(text);
+		range.select()
+	}
+
+	else if (window.getSelection)
+	{
+		selection = window.getSelection();
+		range = document.createRange();
+		range.selectNodeContents(text);
+		selection.removeAllRanges();
+		selection.addRange(range)
+	}
+
 }
 
 window.addEventListener('load', function() {

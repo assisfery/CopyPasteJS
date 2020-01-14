@@ -33,6 +33,12 @@ To copy text to clipboard  **data-copy-text="text"**  attribute to the button.
 <button class="btn btn-success" data-copy-text="Some text">Copy</button>
 ```
 
+### Copy Text - From Others Element
+To copy text to clipboard **data-copy-text="text"** attribute to the button.
+```html
+<button class="btn btn-success" data-copy-origin="#element">Copy</button>
+```
+
 ### Paste Text
 To paste data to a input element just add  **data-paste-target="#element"**  attribute to the button.
 ```html
