@@ -7,7 +7,11 @@ See the demo here: [https://assisfery.github.io/CopyPasteJS/index.html](https://
 
 CDN repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
 
+NPM repository: https://www.npmjs.com/package/copypastejs
+
 [![](https://data.jsdelivr.com/v1/package/gh/assisfery/CopyPasteJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS)
+
+[![](https://img.shields.io/badge/npm-copypastejs-green)](https://www.npmjs.com/package/copypastejs)
 
 
 ### Get Start
@@ -18,7 +22,7 @@ Just import the  **src/CopyPasteJS.js**  file in your document.
 
 This file is hosted in CDN JSDelivr.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@1.0/src/CopyPasteJS.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@1.1/src/CopyPasteJS.min.js"></script>
 ```
 
 Or you can get it using NPM repository.
