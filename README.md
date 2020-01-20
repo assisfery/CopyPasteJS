@@ -21,6 +21,11 @@ This file is hosted in CDN JSDelivr.
 <script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@1.0/src/CopyPasteJS.min.js"></script>
 ```
 
+Or you can get it using NPM repository.
+```js
+npm i copypastejs
+```
+
 ### Copy Text - From Input Element
 To copy data from a input element just add  **data-copy-origin="#element"**  attribute to the button.
 ```html
