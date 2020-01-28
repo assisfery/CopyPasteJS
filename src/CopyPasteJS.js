@@ -194,6 +194,9 @@ CopyPasteJS.selectText = function(element)
 
 }
 
-window.addEventListener('load', function() {
-    CopyPasteJS.init();
-});
+if(window)
+{
+	window.addEventListener('load', function() {
+	    CopyPasteJS.init();
+	});
+}
