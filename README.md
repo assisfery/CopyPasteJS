@@ -1,17 +1,16 @@
 
+
 ##  CopyPasteJS
 
 This a small JS library to execute clipboard functions in a fast and easy way.
+
+[![](https://data.jsdelivr.com/v1/package/gh/assisfery/CopyPasteJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS) [![](https://img.shields.io/badge/npm-copypastejs-green)](https://www.npmjs.com/package/copypastejs)
 
 See the demo here: [https://assisfery.github.io/CopyPasteJS/index.html](https://assisfery.github.io/CopyPasteJS/index.html)
 
 CDN repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
 
 NPM repository: https://www.npmjs.com/package/copypastejs
-
-[![](https://data.jsdelivr.com/v1/package/gh/assisfery/CopyPasteJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS)
-
-[![](https://img.shields.io/badge/npm-copypastejs-green)](https://www.npmjs.com/package/copypastejs)
 
 
 ### Get Start
@@ -43,7 +42,7 @@ To copy text to clipboard  **data-copy-text="text"**  attribute to the button.
 ```
 
 ### Copy Text - From Others Element
-To copy text to clipboard **data-copy-text="text"** attribute to the button.
+To copy text to clipboard from a html element just include **data-copy-text="text"** attribute to the button.
 ```html
 <button class="btn btn-success" data-copy-origin="#element">Copy</button>
 ```
