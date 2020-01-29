@@ -4,12 +4,17 @@
 
 This a small JS library to execute clipboard functions in a fast and easy way.
 
-[![](https://data.jsdelivr.com/v1/package/gh/assisfery/CopyPasteJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS) [![](https://img.shields.io/badge/npm-copypastejs-green)](https://www.npmjs.com/package/copypastejs)
+[![](https://data.jsdelivr.com/v1/package/gh/assisfery/CopyPasteJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS)
+[![](https://img.shields.io/badge/npm-copypastejs-green)](https://www.npmjs.com/package/copypastejs)
 
+
+### Demo
 See the demo here: [https://assisfery.github.io/CopyPasteJS/index.html](https://assisfery.github.io/CopyPasteJS/index.html)
 
-CDN repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
 
+### Repositorys
+Github repository: https://github.com/assisfery/CopyPasteJS
+CDN repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
 NPM repository: https://www.npmjs.com/package/copypastejs
 
 
@@ -25,7 +30,7 @@ This file is hosted in CDN JSDelivr.
 ```
 
 Or you can get it using NPM repository.
-```js
+```
 npm i copypastejs
 ```
 
