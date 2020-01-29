@@ -14,7 +14,9 @@ See the demo here: [https://assisfery.github.io/CopyPasteJS/index.html](https://
 
 ### Repositorys
 Github repository: https://github.com/assisfery/CopyPasteJS
+
 CDN repository: https://www.jsdelivr.com/package/gh/assisfery/CopyPasteJS
+
 NPM repository: https://www.npmjs.com/package/copypastejs
 
 
