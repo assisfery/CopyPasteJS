@@ -147,6 +147,28 @@ CopyPasteJS.copyFrom = function(elem, callback)
 	}
 }
 
+// COPY FROM ELEMENT
+CopyPasteJS.cutFrom = function(elem, callback)
+{
+	var element = document.querySelector(elem);
+
+	if(element.tagName && (element.tagName.toLowerCase() == "input" || element.tagName.toLowerCase() == "textarea"))
+	{
+		element.select();
+		CopyPasteJS.data = element.value;
+	}
+	
+	document.execCommand('cut');
+
+	if(callback)
+	{
+		if(typeof callback == "string")
+			eval(callback);
+		else
+			callback();
+	}
+}
+
 // PASTE TO ELEMENT
 CopyPasteJS.pasteTo = function(elem, callback)
 {

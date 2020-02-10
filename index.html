@@ -242,6 +242,28 @@ CopyPasteJS.pasteTo("#txtPaste4", function(){
 
 		</script>	
 		
+		<br><br>
+		<h5 class="text-success">Cut Value From Element in JavaScript</h5>
+		<pre class="alert alert-secondary">CopyPasteJS.cutFrom("#txtCut2");
+
+// OR CALL A FUNCTION
+CopyPasteJS.cutFrom("#txtCut2", function(){
+	alert("I fell amazing");
+});
+</pre>
+
+		<input type="text" class="form-control" value="Cut something here" id="txtCut2">
+		<br>
+		<button class="btn btn-success" onclick="cutFromElement()">Cut Value From Element</button>
+
+		<script>
+			
+			function cutFromElement()
+			{
+				CopyPasteJS.cutFrom("#txtCut2");
+			}
+
+		</script>
 
 		<br>
 		<div class="text-right text-muted">

@@ -120,3 +120,13 @@ CopyPasteJS.pasteTo("#txtPaste4", function(){
 	alert("I fell amazing");
 });
 ```
+
+##### Cut Value From Element in JavaScript
+```js
+CopyPasteJS.cutFrom("#txtCut2");
+
+// OR CALL A FUNCTION
+CopyPasteJS.cutFrom("#txtCut2", function(){
+	alert("I fell amazing");
+});
+```
