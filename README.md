@@ -28,7 +28,7 @@ Just import the  **src/CopyPasteJS.js**  file in your document.
 
 This file is hosted in CDN JSDelivr.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@1.1/src/CopyPasteJS.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/assisfery/CopyPasteJS@1.2/src/CopyPasteJS.min.js"></script>
 ```
 
 Or you can get it using NPM repository.
