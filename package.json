@@ -1,8 +1,8 @@
 {
   "name": "copypastejs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Library to execute clipboard functions in a fast and easy way",
-  "main": "src/CopyPasteJS.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

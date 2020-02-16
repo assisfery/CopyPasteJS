@@ -216,7 +216,8 @@ CopyPasteJS.selectText = function(element)
 
 }
 
-if(window)
+// changed to work as node module
+if(typeof window !== 'undefined')
 {
 	window.addEventListener('load', function() {
 	    CopyPasteJS.init();
