@@ -1,6 +1,6 @@
 {
   "name": "copypastejs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Library to execute clipboard functions in a fast and easy way",
   "main": "index.js",
   "scripts": {
