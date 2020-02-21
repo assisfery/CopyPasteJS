@@ -226,4 +226,4 @@ if(typeof window !== 'undefined')
 
 exports = CopyPasteJS;
 
-console.log(exports);
+//console.log(exports);

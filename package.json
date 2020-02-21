@@ -2,7 +2,7 @@
   "name": "copypastejs",
   "version": "1.2.2",
   "description": "Library to execute clipboard functions in a fast and easy way",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
